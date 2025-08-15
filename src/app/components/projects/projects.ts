@@ -25,8 +25,8 @@ export class Projects {
       description: 'Eine moderne, responsive Portfolio-Website entwickelt mit Angular. Zeigt meine Fähigkeiten und Projekte in einem ansprechenden Design.',
       technologies: ['HTML', 'SCSS', 'TypeScript', 'Angular', 'Web Development'],
       imageUrl: 'assets/portfolio.png',
-      githubUrl: 'https://github.com/username/portfolio',
-      liveUrl: 'https://portfolio-demo.com',
+      githubUrl: 'https://github.com/Alexander44566/portfolio',
+      liveUrl: 'https://alexander44566.github.io/portfolio/',
       featured: true
     },
     {
