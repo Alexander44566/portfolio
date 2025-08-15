@@ -1,6 +1,121 @@
-# MeinPortfolio
+# 🚀 Portfolio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+Eine moderne, responsive Portfolio-Website entwickelt mit Angular, die meine Fähigkeiten und Projekte präsentiert.
+
+## ✨ Features
+
+- **Responsive Design** - Optimiert für alle Bildschirmgrößen
+- **Smooth Navigation** - Flüssiges Scrollen zwischen Sektionen
+- **Modern UI/UX** - Glasmorphism-Design mit ansprechenden Animationen
+- **Interactive Skills** - Animierte Skill-Balken
+- **Project Showcase** - Projektgalerie mit Hover-Effekten
+- **Performance** - Optimiert für schnelle Ladezeiten
+
+## 🛠️ Technologie-Stack
+
+- **Framework**: Angular 19
+- **Styling**: SCSS
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
+
+## 📁 Projektstruktur
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── header/        # Navigation Header
+│   │   ├── about/         # Über mich Sektion
+│   │   ├── skills/        # Skills & Fähigkeiten
+│   │   ├── projects/      # Projekt Portfolio
+│   │   └── footer/        # Footer mit Kontakt
+│   ├── assets/           # Bilder und Icons
+│   └── styles.scss       # Globale Styles
+```
+
+## 🚀 Installation & Entwicklung
+
+### Voraussetzungen
+- Node.js (v18 oder höher)
+- npm oder yarn
+- Angular CLI
+
+### Setup
+```bash
+# Repository klonen
+git clone https://github.com/Alexander44566/portfolio.git
+cd portfolio
+
+# Dependencies installieren
+npm install
+
+# Entwicklungsserver starten
+npm start
+```
+
+Die Anwendung läuft unter `http://localhost:4200`
+
+## 🎨 Sektionen
+
+### Header
+- Sticky Navigation
+- Smooth Scroll zu Sektionen
+- Responsive Hamburger Menü
+
+### Über mich
+- Persönliche Vorstellung
+- Profilbild
+- Entwickler-Background
+
+### Skills
+- Interaktive Skill-Balken
+- Technologie-Icons
+- Prozentuale Bewertungen
+
+### Projekte
+- **Portfolio Website** - Diese Website selbst
+- **Backen Einfach Erklärt** - Back-Community Website
+- Live-Demo und GitHub Links
+- Technologie-Tags
+
+### Footer
+- Impressum
+- Social Media Links
+- Kontaktinformationen
+
+## 🌐 Live Demo
+
+[Portfolio Website](https://alexander44566.github.io/portfolio/)
+
+## 📱 Responsive Design
+
+- **Desktop**: Optimiert für große Bildschirme
+- **Tablet**: Angepasste Grid-Layouts
+- **Mobile**: Stack-Layout mit Touch-optimierten Elementen
+
+## 🔧 Build & Deployment
+
+```bash
+# Produktions-Build erstellen
+npm run build
+
+# Preview der Production-Build
+npm run preview
+```
+
+## 📄 Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert.
+
+## 👨‍💻 Kontakt
+
+**Alexander Strudhoff**
+- GitHub: [@Alexander44566](https://github.com/Alexander44566)
+- Website: [backen-einfach-erklaert.de](https://backen-einfach-erklaert.de/Home)
+
+---
+
+*Entwickelt mit ❤️ und Angular*
 
 ## Development server
 

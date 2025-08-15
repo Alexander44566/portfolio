@@ -1,0 +1,30 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="/" class="brand-link">
+        <img src="assets/logo.jpg" alt="Logo" class="logo">
+        <span>Portfolio</span>
+      </a>
+    </div>
+    
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a (click)="scrollToSection('about')" class="nav-link">Über mich</a>
+        </li>
+        <li class="nav-item">
+          <a (click)="scrollToSection('skills')" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a (click)="scrollToSection('projects')" class="nav-link">Projekte</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="nav-toggle">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,129 @@
+.skills-section {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: auto;
+}
+
+.skills-container {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 3rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.skills-header .skills-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.skill-info .skill-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.skill-info .skill-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.skill-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+}
+.skill-progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 60px);
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+}
+.skill-progress .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 8px;
+  background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%);
+  border-radius: 4px;
+  z-index: 2;
+  transition: width 0.5s ease;
+}
+.skill-progress .skill-percentage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  min-width: 50px;
+  text-align: right;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container {
+    margin: 0 1rem;
+    padding: 2rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .skills-header .skills-title {
+    font-size: 2rem;
+  }
+  .skill-info .skill-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .skill-info .skill-name {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=skills.css.map */

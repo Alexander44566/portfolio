@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+app-about {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+app-skills {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+app-projects {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+router-outlet {
+  flex: 1;
+  padding: 0;
+  min-height: auto;
+}
+
+app-footer {
+  margin-top: 80px;
+}/*# sourceMappingURL=app.css.map */

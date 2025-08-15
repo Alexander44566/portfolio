@@ -1,0 +1,39 @@
+// App Layout
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Spacing zwischen Komponenten
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+app-about {
+  margin-top: 100px; // Header-Höhe kompensieren (da Header fixed ist)
+  margin-bottom: 0; // Kein zusätzlicher Abstand
+}
+
+app-skills {
+  margin-top: 80px; // Kontrollierter Abstand zur About-Sektion
+  margin-bottom: 0px; // Konsistenter Abstand nach unten
+}
+
+app-projects {
+  margin-top: 80px; // Sehr kleiner Abstand zur Skills-Sektion
+  margin-bottom: 0px; // Kein Abstand zum Footer
+}
+
+// Main content area (für zukünftige Routed Components)
+router-outlet {
+  flex: 1;
+  padding: 0;
+  min-height: auto; // Keine feste Mindesthöhe
+}
+
+app-footer {
+  margin-top: 80px; // Footer immer am unteren Rand
+}
