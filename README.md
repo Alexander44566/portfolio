@@ -15,8 +15,6 @@ Eine moderne, responsive Portfolio-Website entwickelt mit Angular, die meine Fä
 
 - **Framework**: Angular 19
 - **Styling**: SCSS
-- **Build Tool**: Vite
-- **Deployment**: GitHub Pages
 
 ## 📁 Projektstruktur
 
