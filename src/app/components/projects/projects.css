@@ -24,7 +24,7 @@
 }
 .projects-header .projects-subtitle {
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   margin: 0;
 }
 
@@ -145,7 +145,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin: 0 0 1.5rem 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 
 .project-technologies {

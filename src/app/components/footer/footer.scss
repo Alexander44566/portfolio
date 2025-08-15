@@ -28,7 +28,7 @@
     p {
       margin-bottom: 0.5rem;
       line-height: 1.6;
-      color: #ccc;
+      color: white;
 
       &:last-child {
         margin-bottom: 0;
@@ -60,7 +60,7 @@
       grid-template-columns: 20px 1fr;
       gap: 0.75rem;
       align-items: center;
-      color: #ccc;
+      color: white;
       text-decoration: none;
       transition: color 0.3s ease;
       font-size: 1.1rem;
@@ -90,7 +90,7 @@
   text-align: center;
 
   p {
-    color: #999;
+    color: white;
     font-size: 0.9rem;
     margin: 0;
   }
