@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
+  isMobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
+  }
 
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
@@ -18,6 +27,9 @@ export class Header {
         top: elementPosition,
         behavior: 'smooth'
       });
+      
+      // Schließe das mobile Menü nach dem Klick
+      this.closeMobileMenu();
     }
   }
 }

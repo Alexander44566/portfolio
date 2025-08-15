@@ -88,6 +88,21 @@
     background: white;
     transition: all 0.3s ease;
   }
+
+  // Hamburger Animation when active
+  &.active .hamburger-line {
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
 }
 
 // Responsive Design
