@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   portfolio:
-    image: ghcr.io/alexander44566/portfolio:latest
+    image: portfolio
     container_name: portfolio
     restart: unless-stopped
     networks:
