@@ -10,7 +10,8 @@ services:
     labels:
       caddy: alexander-strudthoff.dev
       caddy.reverse_proxy: "{{upstreams 8080}}"
-
+    ports:
+      - "8080:8080"
 networks:
   proxy_network:
     external: true
