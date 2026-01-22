@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  portfolio:
+    image: ghcr.io/alexander44566/portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    networks:
+      - proxy_network
+    labels:
+      caddy: alexander-strudthoff.dev
+      caddy.reverse_proxy: "{{upstreams 8080}}"
+
+networks:
+  proxy_network:
+    external: true
