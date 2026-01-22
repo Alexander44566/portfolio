@@ -7,11 +7,11 @@ RUN npm run build
 
 FROM nginxinc/nginx-unprivileged:alpine3.22
 USER root
-# Deaktiviere problematische scripts + sichere Temp-Pfade
+# Scripts deaktivieren + Verzeichnisse nacheinander erstellen/chown
 RUN rm -rf /docker-entrypoint.d/* && \
-    mkdir -p /tmp/client_temp /tmp/proxy_temp && \
-    chown -R 101:101 /tmp /run/nginx && \
-    chmod 755 /tmp /run/nginx
+    mkdir -p /tmp/client_temp /tmp/proxy_temp /run/nginx && \
+    chown -R 101:101 /tmp/client_temp /tmp/proxy_temp /run/nginx && \
+    chmod 755 /tmp/client_temp /tmp/proxy_temp /run/nginx
 USER nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
